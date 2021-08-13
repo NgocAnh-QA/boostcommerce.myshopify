@@ -32,16 +32,16 @@ public class Search extends AbstractTest {
         log.info("Search - Step 01: Input to the search box");
         homePage.inputToSearchTextBox(searchData);
 
-        log.info("Search - Step 03: Verify product rows on return to the search result contains search data");
+        log.info("Search - Step 02: Verify product rows on return to the search result containing search data");
         verifyTrue(homePage.areSearchResultsDisplayedWithSearchData(searchData));
 
-        log.info("Search - Step 04: Verify Number of product rows > 1");
+        log.info("Search - Step 03: Verify Number of product rows > 1");
         verifyTrue(homePage.areNumberOfProductRowsDisplayedGreaterThan1());
 
     }
     @AfterClass
     public void afterClass() {
-        log.info("Search - Post condition: Close browser and quite driver");
+        log.info("Search - Post condition: Close browser and quit driver");
         closeBrowserAndDriver(driver);
     }
 
