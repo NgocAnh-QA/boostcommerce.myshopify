@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Boost Commerce" parallel="false">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.AllureTestListener"/>
+    </listeners>
+
+    <test name="Run on CHROME UI">
+        <parameter name="url" value="https://bc-sf-filter-demo-1.myshopify.com/collections/tops"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="shopify.user.Search"/>
+        </classes>
+    </test>
+
+    <test name="Run on FIREFOX UI">
+        <parameter name="url" value="https://bc-sf-filter-demo-1.myshopify.com/collections/tops"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="shopify.user.Search"/>
+        </classes>
+    </test>
+
+    <test name="Run on EDGE">
+        <parameter name="url" value="https://bc-sf-filter-demo-1.myshopify.com/collections/tops"/>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="shopify.user.Search"/>
+        </classes>
+    </test>
+
+
+</suite>
