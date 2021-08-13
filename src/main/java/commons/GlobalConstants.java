@@ -3,9 +3,9 @@ package commons;
 import java.io.File;
 
 public class GlobalConstants {
-	public static final String DEV_SERVER = "https://demo.nopcommerce.com/";
-	public static final String TESTING_SERVER = "https://testing.nopcommerce.com/";
-	public static final String STAGING_SERVER = "https://testing.nopcommerce.com/";
+	public static final String DEV_SERVER = "https://boost-pfs-vertical.myshopify.com/collections/dresses";
+	public static final String TESTING_SERVER = "https://boost-pfs-vertical.myshopify.com/collections/dresses";
+	public static final String STAGING_SERVER = "https://boost-pfs-vertical.myshopify.com/collections/dresses";
 	public static final long SHORT_TIMEOUT = 5;
 	public static final long LONG_TIMEOUT = 30;
 	public static String ROOT_FOLDER = System.getProperty("user.dir");
